@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Nelson Jhony Barrera Amaru</title>
+<style>
+  :root { --accent: #1a5fb4; --gray: #444; --light: #f4f6f9; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", Calibri, Arial, sans-serif;
+    color: #222; background: #e8eaed; font-size: 10.5pt; line-height: 1.45;
+  }
+  .page {
+    max-width: 800px; margin: 24px auto; background: #fff; padding: 48px 56px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.15);
+  }
+  header { text-align: center; margin-bottom: 22px; }
+  h1 { font-size: 26pt; letter-spacing: 2px; color: var(--accent); text-transform: uppercase; }
+  .contact { margin-top: 8px; font-size: 10pt; color: var(--gray); }
+  .contact span { margin: 0 8px; }
+  h2 {
+    font-size: 12.5pt; color: var(--accent); text-transform: uppercase; letter-spacing: 1px;
+    border-bottom: 2px solid var(--accent); padding-bottom: 3px; margin: 20px 0 10px;
+  }
+  p { margin-bottom: 6px; }
+  ul { margin: 4px 0 8px 18px; }
+  li { margin-bottom: 3px; }
+  .proyecto { margin-bottom: 10px; }
+  .proyecto b { color: #111; }
+  .proyecto .stack { color: var(--gray); font-size: 9.5pt; }
+  .job { margin-bottom: 12px; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-title { font-weight: 600; }
+  .job-company { color: var(--accent); font-weight: 600; }
+  .job-date { color: var(--gray); font-size: 9.5pt; white-space: nowrap; }
+  .gh-link { color: var(--accent); text-decoration: none; font-size: 9pt; }
+  .skill-tags span { display: inline-block; background: var(--light); border: 1px solid #d8dde4; border-radius: 3px; padding: 1px 8px; margin: 2px 3px 2px 0; font-size: 9.5pt; }
+  .print-only { display: none; }
+  @media print {
+    body { background: #fff; font-size: 10pt; }
+    .page { box-shadow: none; margin: 0; max-width: none; padding: 0 12px; }
+    @page { size: A4; margin: 14mm 14mm; }
+    .no-print { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Nelson Jhony Barrera Amaru</h1>
+    <div class="contact">
+      Calle Miguel de Unamuno 631 – San Miguel, Lima<br>
+      <span>📞 997 051 720</span><span>✉ nelsonjhony@gmail.com</span>
+      <span>🔗 GitHub: <a class="gh-link" href="https://github.com/cursosvirtuales201110-pixel" target="_blank">github.com/cursosvirtuales201110-pixel</a></span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Perfil Profesional</h2>
+    <p>Ingeniero informático con más de 15 años de experiencia combinando soporte informático, operaciones de seguros y desarrollo de software. Ha construido plataformas SaaS completas —frontend, backend, base de datos y despliegue— para los sectores inmobiliario, fitness y nutrición, así como aplicaciones de escritorio y sitios web. Sólido dominio de JavaScript, TypeScript, Python, Java, C# y Dart, y de bases de datos PostgreSQL y Supabase. Experiencia en cobros de seguros mediante archivos (SOAT, VisaNet, Mastercard), gran capacidad de organización y análisis, y excelente trabajo en equipo en coordinación con todas las áreas de la empresa.</p>
+  </section>
+
+  <section>
+    <h2>Habilidades Técnicas</h2>
+    <div class="skill-tags">
+      <span>JavaScript / TypeScript</span><span>Python</span><span>Java</span><span>C#</span><span>Dart / Flutter</span>
+      <span>Next.js</span><span>React</span><span>Vite</span><span>Tailwind CSS</span><span>HTML / CSS / EJS</span>
+      <span>Node.js / Express</span><span>FastAPI</span><span>Flask</span><span>REST APIs</span>
+      <span>PostgreSQL</span><span>Supabase (Auth · RLS · Edge Functions)</span><span>SQLite</span><span>MySQL</span>
+      <span>Playwright / Scraping</span><span>Leaflet (mapas)</span><span>Celery</span><span>n8n</span><span>Docker / Docker Compose</span>
+      <span>MediaPipe</span><span>OpenCV</span><span>ChartJS / Highcharts</span><span>Git / GitHub</span>
+      <span>Vercel</span><span>Render</span><span>Linux / Solaris</span><span>MS Office · Excel · Access</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Proyectos Destacados</h2>
+
+    <div class="proyecto">
+      <b>1. Radar Inmobiliario Perú</b> — SaaS de inteligencia inmobiliaria
+      <a class="gh-link" href="https://github.com/newtonprofesor2020-max/radar_inmobiliario.git" target="_blank">[GitHub]</a><br>
+      Plataforma full-stack que automatiza el scraping de portales inmobiliarios (Urbania, Adondevivir), normaliza propiedades, las valora por metro cuadrado según distrito (tabla de 43 distritos de Lima) y gestiona el pipeline comercial con CRM, reportes y facturación. Arquitectura modular en monorepo con despliegue en Docker.
+      <div class="stack">Stack: Next.js 15 · TypeScript · FastAPI · Celery · Supabase / PostgreSQL · Docker</div>
+    </div>
+
+    <div class="proyecto">
+      <b>2. Radar Remates</b> — Radar de remates judiciales (REMAJU)
+      <a class="gh-link" href="https://github.com/newtonprofesor2020-max/radar-remates.git" target="_blank">[GitHub]</a><br>
+      Plataforma full-stack que extrae automáticamente los remates judiciales de REMAJU (Poder Judicial del Perú), calcula la oportunidad de cada inmueble (descuento vs valor de mercado, score 0–100 y riesgo) y los muestra en un dashboard con mapa interactivo, filtros por distrito/precio/riesgo, favoritos e informes ejecutivos.
+      <div class="stack">Stack: Python · FastAPI · Playwright · Supabase · React 19 · Vite · Leaflet</div>
+    </div>
+
+    <div class="proyecto">
+      <b>3. GymPro / SmartGym</b> — SaaS B2B para gimnasios
+      <a class="gh-link" href="https://github.com/cursosvirtuales201110-pixel" target="_blank">[GitHub]</a>
+      <a class="gh-link" href="https://www.tiktok.com/@jhony_1978/video/7665923452272119061" target="_blank">[Video demo]</a><br>
+      Plataforma para que cada gimnasio administre clientes (con códigos de acceso), rutinas y planes de pago. Integra un catálogo de 1,324 ejercicios con animaciones e instrucciones en 9 idiomas y un programa de afiliados B2B con comisiones automáticas del 30 % por referidos.
+      <div class="stack">Stack: Node.js · Express · EJS · SQLite / Supabase · PostgreSQL</div>
+    </div>
+
+    <div class="proyecto">
+      <b>4. NutriPerú QR</b> — App móvil de nutrición
+      <a class="gh-link" href="https://github.com/cursosvirtuales201110-pixel/NutriPeru" target="_blank">[GitHub]</a>
+      <a class="gh-link" href="https://nutriperu-dx4b.onrender.com/#descargar" target="_blank">[Demo en vivo]</a>
+      <a class="gh-link" href="https://www.tiktok.com/@jhony_1978/video/7664806202148195604" target="_blank">[Video demo]</a><br>
+      App Flutter para consultar la tabla peruana de composición de alimentos (INS/CENAN), calcular nutrientes por porción, comparar alimentos y registrar comidas diarias, con generación y lectura de códigos QR nutricionales. Incluye pagos Yape/Plin con envío de comprobante por WhatsApp y modo offline. <i>Demo: admin@nutriperu.pe / Admin123456*</i>
+      <div class="stack">Stack: Flutter · Supabase (Auth · RLS · Edge Functions) · Hive · QR</div>
+    </div>
+
+    <div class="proyecto">
+      <b>5. Business Scraper</b> — Extracción de leads de Google Maps<br>
+      Aplicación web que automatiza búsquedas en Google Maps y exporta a CSV los datos de negocios (nombre, teléfono, dirección, categoría, valoraciones) para prospección comercial, con técnicas anti-detección.
+      <div class="stack">Stack: Python · Flask · Playwright · CSV</div>
+    </div>
+
+    <div class="proyecto">
+      <b>6. EyeHand Mouse</b> — Accesibilidad con visión por computadora<br>
+      Aplicación de escritorio que controla el mouse con seguimiento ocular y gestos de mano (clics, arrastre y scroll), con calibración, perfiles de usuario y temas claro/oscuro.
+      <div class="stack">Stack: Python · MediaPipe · OpenCV · PySide6 · PyAutoGUI</div>
+    </div>
+
+    <div class="proyecto">
+      <b>7. Sitio web institucional — Veterinaria Groomers</b><br>
+      Sitio web moderno y responsive para una clínica veterinaria, con renderizado estático y componentes reutilizables.
+      <div class="stack">Stack: Next.js 16 · React 19 · TypeScript · Tailwind CSS</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experiencia Laboral</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Operador Help Desk</span>
+        <span class="job-date">Oct 2016 – Abr 2023</span>
+      </div>
+      <div class="job-company">GE Pharma</div>
+      <ul>
+        <li>Responsable del mantenimiento y buen funcionamiento de PC de escritorio y laptops; configuración de redes y subredes internas.</li>
+        <li>Resolución de problemas de usuarios con MS Office y cualquier incidencia que afecte sus funciones.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Operador de Seguros</span>
+        <span class="job-date">Sep 2010 – Sep 2016</span>
+      </div>
+      <div class="job-company">Corredora de Seguros AON Affinity</div>
+      <ul>
+        <li>Emisión de EECC de SOAT para clientes empresariales y naturales; envío de aplicaciones de pago a aseguradoras (Rímac, Pacífico, Mapfre).</li>
+        <li>Envío de facturas y boletas; cobros masivos, liquidación y facturación de seguros masivos con efectividad verificada.</li>
+        <li>Generación de estados de cuenta semanales para aseguradoras y actualización semanal de tarjetas de crédito y cuentas de ahorro.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Analista</span>
+        <span class="job-date">Jul 2009 – Ago 2010</span>
+      </div>
+      <div class="job-company">Telecomunicaciones Telmex S.A.</div>
+      <ul>
+        <li>Administrador del área de Activación y Upload del sistema SIGRES (gestión de redes ATM y Metro).</li>
+        <li>Uso de Linux/Solaris y tecnologías NexExpert y Cmexel (productos AGILENT), WebSphere.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Analista</span>
+        <span class="job-date">Sep 2008 – Jun 2009</span>
+      </div>
+      <div class="job-company">Consultora ADEXUS</div>
+      <ul>
+        <li>Administrador del área de Activación y Upload del sistema SIGRES (gestión de redes ATM y Metro); Linux/Solaris, NexExpert, Cmexel y WebSphere.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Desarrollador</span>
+        <span class="job-date">Ago 2008 – Sep 2008</span>
+      </div>
+      <div class="job-company">Ministerio de Comercio Exterior y Turismo</div>
+      <ul>
+        <li>Desarrollo de aplicaciones con tecnología Visual Basic .NET.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Analista Desarrollador</span>
+        <span class="job-date">Mar 2007 – Dic 2007</span>
+      </div>
+      <div class="job-company">Grupo La República</div>
+      <ul>
+        <li>Participación en el proyecto del sistema de producción Sisprod II; creación de reportes con iReport; MySQL, AJAX, Java, UML, RUP y Eclipse.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Practicante de Asistente de Hardware</span>
+        <span class="job-date">Mar 2003 – Dic 2007</span>
+      </div>
+      <div class="job-company">Empresa Transnacional Alusud Perú</div>
+      <ul>
+        <li>Help desk, soporte técnico en hardware y software, inventarios de software y hardware, y programación de backups en servidores HP.</li>
+        <li>Participación en planes de contingencia para servidores, sistemas de red, sistemas eléctricos y UPS.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Puntos Fuertes</h2>
+    <ul>
+      <li>Amplia experiencia en seguros masivos y empresariales, incluyendo cobros por VisaNet y Mastercard.</li>
+      <li>Sólidos conocimientos de los procedimientos realizados en bases de datos.</li>
+      <li>Dominio de MS Office, Excel, Access y Word.</li>
+      <li>Muy familiarizado con el trabajo en equipo y la coordinación entre áreas.</li>
+      <li>Gran nivel de redacción de coberturas complejas; fluidez verbal.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Educación</h2>
+    <p><b>Ingeniería Informática</b> — Pontificia Universidad Católica del Perú (PUCP), 1999–2005</p>
+    <p><b>Secundaria</b> — Colegio C3 – San Felipe, 1990–1995</p>
+    <p><b>Primaria</b> — Virgen de las Mercedes, 1984–1990</p>
+  </section>
+
+  <p class="no-print" style="margin-top:20px; text-align:center; color:#888; font-size:9pt;">
+    Consejo: imprime esta página con Ctrl+P (elige "Guardar como PDF") para obtener tu CV en PDF.
+  </p>
+
+</div>
+</body>
+</html>
