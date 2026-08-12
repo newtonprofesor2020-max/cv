@@ -129,20 +129,21 @@
     </div>
 
     <div class="proyecto">
-      <b>8. GeoFoto</b> — Plataforma SaaS de evidencias fotográficas georreferenciadas<br>
-      Sistema SaaS completo desarrollado con agentes de IA (OpenCode, Claude Code): app móvil Flutter donde el personal de campo inicia sesión, captura fotos con la cámara, obtiene coordenadas GPS y dirección automática (geocodificación) y sube las evidencias a Supabase; el panel web React/Vite permite a administradores y supervisores gestionar empresas, trabajadores, evidencias e informes.
+      <b>8. GeoFoto</b> — Plataforma SaaS de evidencias fotográficas georreferenciadas
+      <a class="gh-link" href="https://github.com/newtonprofesor2020-max/geofoto" target="_blank">[GitHub]</a><br>
+      Sistema SaaS completo desarrollado con agentes de IA (OpenCode, Claude Code). La app móvil Flutter permite al personal de campo iniciar sesión, capturar fotos con la cámara, obtener las coordenadas GPS y la dirección automática mediante geocodificación, y subir las evidencias a Supabase (Auth + Storage). El panel web React/Vite, con rutas protegidas por rol (Admin/Supervisor), gestiona empresas, trabajadores, evidencias e informes.
       <div class="stack">Stack: Flutter · Camera · Geolocator/Geocoding · Supabase (Auth · Storage) · React · Vite</div>
     </div>
 
     <div class="proyecto">
       <b>9. MedicAlert (MedGuardian)</b> — SaaS multi-tenant de coordinación de medicación<br>
-      Plataforma para pacientes, familiares, cuidadores y organizaciones de salud: backend modular en FastAPI con PostgreSQL, Redis y Celery (tareas programadas y recordatorios), migraciones Alembic, despliegue con Docker Compose y frontend Flutter Web. Integraciones configurables de notificaciones push (FCM), WhatsApp, correo y pagos.
-      <div class="stack">Stack: FastAPI · PostgreSQL · Redis · Celery · Alembic · Docker · Flutter Web</div>
+      Plataforma multi-tenant para pacientes, familiares, cuidadores y organizaciones de salud. Backend modular en FastAPI con SQLAlchemy asíncrono, PostgreSQL y migraciones Alembic; Redis y Celery (worker/beat) para recordatorios y tareas programadas; despliegue con Docker Compose y nginx. Frontend Flutter Web e integraciones configurables de notificaciones push (FCM), WhatsApp, correo y pagos, con políticas RLS por tenant en Supabase.
+      <div class="stack">Stack: FastAPI · SQLAlchemy async · PostgreSQL · Redis · Celery · Alembic · Docker · Flutter Web</div>
     </div>
 
     <div class="proyecto">
       <b>10. CallShield (Lidashield)</b> — App Android de bloqueo inteligente de llamadas<br>
-      Aplicación Android nativa que usa el servicio de filtrado de llamadas del sistema (CallScreeningService) para bloquear llamadas: lista negra y lista blanca (modo solo permitidos), bloqueo de números desconocidos, selección masiva de contactos, normalización de números y respuesta SMS automática a las llamadas rechazadas.
+      Aplicación Android nativa en Kotlin que implementa el CallScreeningService del sistema para interceptar y evaluar cada llamada entrante: lista negra, lista blanca (modo solo permitidos), bloqueo de números desconocidos, selección masiva de contactos, normalización de números y envío automático de SMS al rechazar una llamada. Se activa como bloqueador por defecto mediante RoleManager.
       <div class="stack">Stack: Kotlin · Android (CallScreeningService · RoleManager) · XML</div>
     </div>
   </section>
